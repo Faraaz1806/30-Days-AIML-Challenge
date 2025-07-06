@@ -4,13 +4,9 @@ Schools and teachers need an easy way to check students' marks, calculate totals
 
 Goal:
 1) Build a Python program that:
-
 2) Reads student marks from a CSV or Excel file
-
 3) Calculates total and average
-
 4) Checks if each student has passed or failed
-
 5) Finds the topper(s)
 
 Shows the final report:

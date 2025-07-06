@@ -19,18 +19,11 @@ elif(file_path.endswith(".xlsx")):
     df = pd.read_excel(file_path)
 else:
     print("Invalid file_path , File path must end with .csv or .xlsx")
-
-# print(df)
+print("Original Data\n",df)
 df["Total Marks"] = df["Physics"]+df["Chemistry"]+df["Maths"]
-print(df)
+
 df["Average Marks"] = (df["Total Marks"])/3
-print(df)
-
 df["Pass/Fail"]=df["Average Marks"].apply(lambda x: "Pass" if x>=70 else "Fail")
-print(df)
-
 df = df.sort_values(by = "Average Marks", ascending=False)
-print(df)
-
 df["Rank"] = range(1,len(df)+1)
-print(df)
+print("Final Report: \n",df)
